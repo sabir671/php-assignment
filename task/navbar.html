@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>navbare</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+         -->
+    <style>
+        .nav>li>a:focus,
+        .nav>li>a:hover {
+            text-decoration: none;
+            background-color: red;
+        }
+        
+        body {
+            background-image: url('image/img.jpg');
+            background-repeat: no-repeat;
+            background-size: fixed;
+        }
+        
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            margin-left: 200px;
+        }
+        
+        h2 {
+            margin-left: 700px;
+            color: yellow;
+        }
+        
+        p {
+            margin-left: 700px;
+            color: yellow;
+            text-align: right;
+        }
+        
+        ul {
+            color: rgb(0, 255, 38);
+            margin-left: 100px;
+        }
+        
+        h1 {
+            color: rgb(0, 255, 38);
+            margin-left: 100px;
+        }
+        
+        .nav>li>a:focus,
+        .nav>li>a:hover {
+            text-decoration: none;
+            background-color: red, yellow;
+        }
+        
+        .xa {
+            padding-bottom: 1000px;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .cd img {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
+        .cd h2,
+        .cd p {
+            display: inline-block;
+            margin: 0 0 0 10px;
+            vertical-align: middle;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+    </script>
+</head>
+
+<body>
+
+    <nav class="" style="background-color: black;">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li> <a href="#sab" style="color: white;" id="htm">HTML</a></li>
+                <li class="active"><a href="#css" style="color: white;" id="abs" onclick="handleClick(this)">CSS</a></li>
+                <li><a href="#profile" style="color: white;" target="_new"> Profile</a></li>
+                <li>
+                    <a href="https://images.pexels.com/photos/60597/dahlia-red-blossom-bloom-60597.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" style="color: white;" download>download1</a>
+                </li>
+                <li><a href="download1.html" style="color: white;" id="zabb" download>Download2</a></li>
+            </ul>
+
+        </div>
+    </nav><br><br>
+
+
+
+
+    <div class="cd" id="profile">
+        <img src="image/img2.jpg" alt="">
+        <h2><b>SABIR SHAH</b></h2>
+        <p>MSc chemistry</p>
+    </div>
+    <hr><br>
+    <hr>
+    <div id="sab">
+        <h1 id="sab">HTML</h1>
+        <ul style="list-style-type: square;">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>item 5</li>
+            <li>item 6</li>
+            <li>item 7</li>
+            <li>item 8</li>
+            <li>item 9</li>
+            <li>item 10</li>
+            <li>item 11</li>
+            <li>item 12</li>
+        </ul>
+    </div>
+    <br>
+    <div class="xb">
+        <h1 id="css">CSS</h1>
+        <ul style="list-style-type: decimal;">
+            <li>SAbir</li>
+            <li>shah</li>
+            <li>danish</li>
+            <li>ali</li>
+        </ul>
+    </div>
+
+
+    <script>
+        $(document).ready(function() {
+            $('#htm').click(function(event) {
+                event.preventDefault();
+                const linkText = $(this).text();
+                alert("" + linkText + ".");
+            });
+        });
+
+        $(document).ready(function() {
+            $('#abs').click(function(event) {
+                event.preventDefault();
+                const linkText = $(this).text();
+                alert('' + linkText + '.')
+            });
+        });
+
+
+        function handleClick(element) {
+            alert(element.textContent);
+        }
+        var zabb = document.getElementById('zabb');
+        zabb.addEventListener('click', function() {
+            alert('');
+        });
+    </script>
+
+
+</body>
+
+</html>
