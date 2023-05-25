@@ -11,8 +11,9 @@ if (isset($_POST['submit'])) {
     $sql="INSERT INTO `form_test`(`first_name`, `last_name`, `email`, `mob_no`, `gender`, `status`) VALUES ('$first_name','$last_name','$email','$mob_no','$gender','$status')";
     if ($connection->query($sql) === true) {
         echo 'database submit successfully';
-        header('location: blank.php');
+        header('location:blank.php');
     } else {
         echo'database submit failed';
     }
 }
+?>
