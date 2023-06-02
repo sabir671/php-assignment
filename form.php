@@ -38,11 +38,11 @@
     <h1>REGISTER</h1>
     <form action="insert1.php" method="post">
      
- 
+ <input type="text" name="id" id="id">
  <input type="text" placeholder="First Name" style="border-radius: 100px;" name="first_name"><br><br>
  <input type="text" placeholder="Last Name" style="border-radius:100px;" name="last_name"/><br><br>
   <input type="text" placeholder="Email" style="border-radius:100px;" name="email"><br><br>
-  <input type="number"  placeholder="Mobile Number" style="border-radius:100px;" name="mobile"><br><br>
+  <input type="number"  placeholder="Mobile Number" style="border-radius:100px;" name="mob_no"><br><br>
   <label>Male
   <input type="radio"  value="male" name="gender">
 </label>
